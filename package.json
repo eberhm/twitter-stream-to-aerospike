@@ -1,0 +1,15 @@
+{
+  "name": "aerospike-training-session",
+  "version": "1.0.0",
+  "description": "Aerospike training session for BudgetPlaces",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aerospike": "^1.0.21",
+    "twit": "^1.1.18"
+  }
+}
