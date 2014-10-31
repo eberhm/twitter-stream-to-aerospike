@@ -10,9 +10,9 @@ var client = aerospike.client({
 createTwitterStream().on('tweet', function(tweet) {
     console.log('tweet', tweet);
 
-    var key = aerospike.key('twitter','v1', tweet.id);
+    var key = aerospike.key('demo','twitter', tweet.id);
 
-    client.put(key, tweet, function(err, key) {
+    client.put(key, {text: tweet.text}, function(err, key) {
         console.log('tweet inserted with key ', key);
     });
 });
